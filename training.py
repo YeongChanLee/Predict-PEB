@@ -1,15 +1,11 @@
 import tensorflow as tf
-import shap
 import math
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
-import pydot
 import os
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_curve, roc_auc_score
-
+# You can use these methods below to consider class imbalance problems.
+# In this article, we used BorderlineSMOTE
 from imblearn.under_sampling import ClusterCentroids, RandomUnderSampler
 from imblearn.over_sampling import SMOTE, ADASYN, RandomOverSampler, SVMSMOTE, BorderlineSMOTE
 from imblearn.combine import SMOTEENN
